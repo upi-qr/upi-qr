@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <link href=
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://api.dayschedule.com">
+  <link rel="preconnect" href="https://app.dayschedule.com">
+  <script src=
+  "/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+  data-cf-settings="a13bcb06a3880ee127456f63-|49"></script>
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+  media="print" onload="this.media='all'">
+  <link rel="apple-touch-icon" sizes="180x180" href=
+  "/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <title>UPI QR Code Generator - DaySchedule</title>
+  <meta name="description" content=
+  "Generate UPI QR codes for online payments with free UPI QR Code Generator. Quick, secure, and convenient for all your UPI trnasaction for PayTM, PhonePe, Google Pay etc.">
+  <link rel="canonical" href=
+  "https://dayschedule.com/tools/upi-qr-generator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content=
+  "https://dayschedule.com/tools/upi-qr-generator">
+  <meta property="og:title" content="UPI QR Code Generator">
+  <meta property="og:description" content=
+  "Generate UPI QR codes for online payments with free UPI QR Code Generator. Quick, secure, and convenient for all your UPI trnasaction for PayTM, PhonePe, Google Pay etc.">
+  <meta property="og:image" content=
+  "https://cdn.dayschedule.com/img/dayschedule.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="480">
+  <meta property="og:image:alt" content="DaySchedule Logo">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content=
+  "https://dayschedule.com/tools/upi-qr-generator">
+  <meta property="twitter:title" content="UPI QR Code Generator">
+  <meta property="twitter:description" content=
+  "Generate UPI QR codes for online payments with free UPI QR Code Generator. Quick, secure, and convenient for all your UPI trnasaction for PayTM, PhonePe, Google Pay etc.">
+  <meta property="twitter:image" content=
+  "https://cdn.dayschedule.com/img/dayschedule.png">
+  <meta name="facebook-domain-verification" content=
+  "61zr8uz0n7iafcqv9y03i2mqu0ydyd">
+  <link rel="dns-prefetch" href="//api.dayschedule.com">
+  <link rel="dns-prefetch" href="//app.dayschedule.com">
+  <script async src=
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8402459453084519"
+  crossorigin="anonymous" type=
+  "a13bcb06a3880ee127456f63-text/javascript"></script>
+  <script src=
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  async type="a13bcb06a3880ee127456f63-text/javascript"></script>
+</head>
+<body>
+  <nav class=
+  "navbar navbar-expand-lg navbar-dark bg-brand border-bottom-1 shadow-lg fixed-top"
+  aria-label="Navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src=
+      "/static/img/logo.svg" alt="Logo" width="180" height="54"
+      class="d-inline-block align-top"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-5"></ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/solutions">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=
+            "/integrations">Integrations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/enterprise">Enterprise</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id=
+            "navbarDropdown" role="button" data-bs-toggle=
+            "dropdown" aria-expanded="false">Documentation</a>
+            <ul class="dropdown-menu" aria-labelledby=
+            "navbarDropdown">
+              <li>
+                <a class="dropdown-item text-dark" href=
+                "/docs">Help Center</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-dark" href=
+                "/videos">Video Tutorials</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-dark" href=
+                "/docs/api">API</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a class="dropdown-item text-dark" href=
+                "/contact">Contact us</a>
+              </li>
+            </ul>
+          </li>
+          <li class=
+          "nav-item text-nowrap ms-0 ms-lg-5 me-0 me-sm-3">
+            <a class=
+            "btn btn-outline-primary d-grid text-white mb-3 mb-lg-0"
+            href="https://app.dayschedule.com/login">Log in</a>
+          </li>
+          <li class="nav-item text-nowrap">
+            <a class="btn btn-primary d-grid" href=
+            "https://app.dayschedule.com/signup">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <main>
+      <section class=
+      "hero bg-brand bg-brand-animation px-md-5 py-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h1 class="display-4 fw-bold">UPI QR Code
+              Generator</h1>
+              <p class="fs-4 mb-0">Generate UPI QR codes for online
+              payments with free UPI QR Code Generator. Quick,
+              secure, and convenient for all your UPI trnasaction
+              for PayTM, PhonePe, Google Pay etc.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-5">
+        <div class="container w-960">
+          <div class="tool" id="upi-qr-generator"></div>
+          <div class="loader">
+            <svg role="img" width="960" height="600"
+            aria-labelledby="loading-aria" viewbox="0 0 400 600"
+            preserveaspectratio="none">
+            <title id="loading-aria">Loading...</title>
+            <rect x="0" y="0" width="100%" height="100%" clip-path=
+            "url(#clip-path)" style=
+            "fill: url(&quot;#fill&quot;);"></rect>
+            <defs>
+              <clippath id="clip-path">
+                <rect x="15" y="15" rx="4" ry="4" width="200"
+                height="25"></rect>
+                <rect x="15" y="50" rx="2" ry="2" width="40"
+                height="15"></rect>
+                <rect x="75" y="45" rx="16" ry="16" width="55"
+                height="22"></rect>
+                <rect x="15" y="75" rx="3" ry="3" width="215"
+                height="15"></rect>
+                <rect x="15" y="105" rx="3" ry="3" width="50"
+                height="15"></rect>
+                <rect x="75" y="105" rx="3" ry="3" width="50"
+                height="15"></rect>
+                <rect x="135" y="105" rx="3" ry="3" width="50"
+                height="15"></rect>
+                <rect x="15" y="135" rx="16" ry="16" width="55"
+                height="22"></rect>
+                <rect x="15" y="165" rx="2" ry="2" width="150"
+                height="50"></rect>
+                <rect x="215" y="180" rx="2" ry="2" width="40"
+                height="20"></rect>
+              </clippath>
+              <lineargradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3"
+                stop-opacity="1">
+                  <animate attributename="offset" values=
+                  "-2; -2; 1" keytimes="0; 0.25; 1" dur="2s"
+                  repeatcount="indefinite"></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb"
+                stop-opacity="1">
+                  <animate attributename="offset" values=
+                  "-1; -1; 2" keytimes="0; 0.25; 1" dur="2s"
+                  repeatcount="indefinite"></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3"
+                stop-opacity="1">
+                  <animate attributename="offset" values="0; 0; 3"
+                  keytimes="0; 0.25; 1" dur="2s" repeatcount=
+                  "indefinite"></animate>
+                </stop>
+              </lineargradient>
+            </defs></svg>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="col-md-8 offset-md-2 mb-5">
+          <i>Disclaimer: This tool is created to assist merchants
+          in generating custom UPI QR codes for their businesses.
+          It is not an official app and not affiliated with any
+          bank, UPI, or other financial institution.</i>
+        </div>
+        <div class="col-md-8 offset-md-2 mb-5" itemscope itemtype=
+        "https://schema.org/FAQPage">
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">How do I generate a UPI QR
+            code?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                Follow these steps to generate a UPI QR code:
+                <ol>
+                  <li>Enter your UPI ID, and the amount (if
+                  applicable)</li>
+                  <li>Add any additional payment details like payee
+                  name, notes etc into the UPI QR generator
+                  tool</li>
+                  <li>Select a valid color code to generate the QR
+                  in particular color</li>
+                  <li>Click on "Generate" button to download the
+                  UPI QR code</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">What are the different query
+            parameters that can be used in upi:// link?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Here the list of parameters:</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Description</th>
+                      <th>Example Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>pa</strong></td>
+                      <td>Payee VPA (Virtual Payment Address) -
+                      This is the UPI ID of the recipient.</td>
+                      <td>demo@upi</td>
+                    </tr>
+                    <tr>
+                      <td><strong>pn</strong></td>
+                      <td>Payee Name - The name of the person or
+                      entity receiving the payment.</td>
+                      <td>Demo Payee</td>
+                    </tr>
+                    <tr>
+                      <td><strong>am</strong></td>
+                      <td>Amount - The amount to be paid. This
+                      value is optional.</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td><strong>tn</strong></td>
+                      <td>Transaction Note - A note or description
+                      of the transaction. This value is
+                      optional.</td>
+                      <td>Demo Transaction</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">Can I specify a fixed amount in the
+            UPI QR code?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Yes, you can specify a fixed amount in INR when
+                generating the UPI QR code.</p>
+                <p>When the QR code is scanned, the specified
+                amount will automatically be filled in, making it
+                convenient for transactions.</p>
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">Is the UPI QR code safe to
+            use?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                Yes, UPI QR codes are safe to use. They contain
+                only the payment details you provide, such as your
+                UPI ID and the transaction amount. Scanning the QR
+                code initiates a secure payment through the
+                <a target="_blank" rel="nofollow" href=
+                "https://www.npci.org.in/what-we-do/upi/product-overview">
+                UPI system</a>.
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">Can I use the UPI QR code for
+            recurring payments?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                UPI QR codes are typically used for one-time
+                payments. For recurring payments, you would need to
+                use a <a href=
+                "/docs/t/razorpay-payment-integration/312">payment
+                gateway like Razorpay</a> or Stripe for automated
+                payments.
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">Can I track payments made through
+            the UPI QR code?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                <p>Payments made through a UPI QR code can be
+                tracked through your UPI-enabled app or bank
+                statement.</p>
+                <p>The app will show the details of each
+                transaction, including the amount, date, and payer
+                information.</p>
+              </div>
+            </div>
+          </div>
+          <div itemprop="mainEntity" itemscope itemtype=
+          "https://schema.org/Question">
+            <h2 itemprop="name">Can I integrate this with
+            DaySchedule to accept appointment payments via
+            UPI?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype=
+            "https://schema.org/Answer">
+              <div itemprop="text">
+                Yes, you can integrate the UPI QR code with the
+                <a href="/">DaySchedule appointment booking
+                system</a> via Razorpay.
+                <ol>
+                  <li>Login to your DaySchedule account</li>
+                  <li>Go to Connections &gt; Connect with
+                  Razorpay</li>
+                  <li>Create or edit your event, webinar and enter
+                  the amount</li>
+                </ol>By connecting with Razopay, clients can easily
+                scan and <a href=
+                "/docs/t/how-to-monetize-your-webinar/372">make
+                payments via UPI for scheduled appointments and
+                webinar</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="bg-warning">
+        <div class="py-5">
+          <section>
+            <div class="text-center">
+              <div class="mb-4 h3 fw-bold">
+                Create your <mark>own appointment page</mark> -
+                it's free, easy & beautiful
+              </div><a href="https://app.dayschedule.com/signup"
+              class="btn btn-lg btn-primary mb-5">Start For Free
+              →</a>
+            </div>
+            <div class="col-md-12 text-center mb-5"><img src=
+            "https://cdn.dayschedule.com/img/dayschedule-appointment-software.webp"
+            class="img-fluid rounded" alt=
+            "Appointment booking software" width="1120" height=
+            "560"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </main>
+  <footer class="border-top py-5">
+    <div class="container">
+      <div>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <p class="text-muted">© 2025 dayschedule.com</p>
+            <p>All rights reserved</p>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a rel="nofollow" aria-label="Github" href=
+                "https://github.com/dayschedule/dayschedule-widget">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a rel="nofollow" aria-label="Twitter" href=
+                "https://x.com/dayschedule"></a>
+              </li>
+              <li class="list-inline-item">
+                <a rel="nofollow" aria-label="Facebook" href=
+                "https://www.facebook.com/DaySchedule"></a>
+              </li>
+              <li class="list-inline-item">
+                <a rel="nofollow" aria-label="LinkedIn" href=
+                "https://www.linkedin.com/company/dayschedule"></a>
+              </li>
+            </ul>
+            <div class="my-5">
+              <a class="text-success" href=
+              "https://status.dayschedule.com/"><span>All system
+              operational</span></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <p class="h5">Product</p>
+            <ul class="list-unstyled footer-link mb-0">
+              <li class="py-2">
+                <a href="/pricing" class="text-dark">Pricing</a>
+              </li>
+              <li class="py-2">
+                <a href="/widget" class=
+                "text-dark">Widget<sup class=
+                "badge badge-danger">new</sup></a>
+              </li>
+              <li class="py-2">
+                <a href="/templates" class=
+                "text-dark">Templates</a>
+              </li>
+              <li class="py-2">
+                <a href="/integrations" class=
+                "text-dark">Integrations</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs/api" class="text-dark">API Docs</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs" class="text-dark">Documentation</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs/change-log" class="text-dark">Change
+                Log</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <p class="h5">Features</p>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2">
+                <a href=
+                "/docs/t/how-to-customize-the-appointment-registration-form/383"
+                class="text-dark">Custom forms</a>
+              </li>
+              <li class="py-2">
+                <a href=
+                "/docs/t/how-to-use-group-scheduling-for-multiple-person-meetings/352"
+                class="text-dark">Group booking</a>
+              </li>
+              <li class="py-2">
+                <a href=
+                "/docs/t/how-to-set-up-round-robin-event-for-teams/351"
+                class="text-dark">Round-robin events</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs/t/payment-integrations/300" class=
+                "text-dark">Accept payment</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs/t/users-management/236" class=
+                "text-dark">User role manager</a>
+              </li>
+              <li class="py-2">
+                <a href="/docs/t/branding/285" class=
+                "text-dark">Color customization</a>
+              </li>
+              <li class="py-2">
+                <a href=
+                "/docs/t/how-to-add-a-calendar-appointment-booking-system-to-wordpress/358"
+                class="text-dark">Wordpress plugin</a>
+              </li>
+            </ul>
+            <p class="h5 mt-3">Comparison</p>
+            <ul class="list-unstyled">
+              <li class="py-2">
+                <a href="/alternatives/calendly-alternative" class=
+                "text-dark">Calendly</a>
+              </li>
+              <li class="py-2">
+                <a href="/alternatives/doodle-alternative" class=
+                "text-dark">Doodle</a>
+              </li>
+              <li class="py-2">
+                <a href="/alternatives/setmore-alternative" class=
+                "text-dark">Setmore</a>
+              </li>
+              <li class="py-2">
+                <a href="/alternatives" class="text-dark">See all
+                →</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <p class="h5">Account</p>
+            <ul class="list-unstyled">
+              <li class="py-2">
+                <a href="https://app.dayschedule.com/signup" class=
+                "text-dark">Sign up</a>
+              </li>
+              <li class="py-2">
+                <a href="https://app.dayschedule.com" class=
+                "text-dark">Sign in</a>
+              </li>
+              <li class="py-2">
+                <a href=
+                "https://app.dayschedule.com/forgot-password"
+                class="text-dark">Password reset</a>
+              </li>
+            </ul>
+            <p class="h5">Free Tools</p>
+            <ul class="list-unstyled">
+              <li class="py-2">
+                <a href="/tools/event-link-generator" class=
+                "text-dark">Event Link Generator</a>
+              </li>
+              <li class="py-2">
+                <a href="/tools/mailto-link-generator" class=
+                "text-dark">Mailto Link Generator</a>
+              </li>
+              <li class="py-2">
+                <a href="/tools/event-qr-generator" class=
+                "text-dark">Event QR Generator</a>
+              </li>
+              <li class="py-2">
+                <a href="/tools/time-difference-calculator" class=
+                "text-dark">Time Difference Calculator</a>
+              </li>
+              <li class="py-2">
+                <a href="/tools/unix-timestamp-convertor" class=
+                "text-dark">Unix Timestamp Converter</a>
+              </li>
+              <li class="py-2">
+                <a href="/tools" class="text-dark">See all →</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-start my-3">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="/about" class="text-dark">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/contact" class="text-dark">Contact us</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/affiliate" class="text-dark">Affiliate
+            program <sup class=
+            "badge bg-danger blink-animation">New</sup></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/pdf/dayschedule-security.pdf" title=
+            "DaySchedule SaaS Security" class=
+            "text-dark">Security</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/terms" class="text-dark">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/privacy" class="text-dark">Privacy &
+            Cookies</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/gdpr" class="text-dark">GDPR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div>
+    <div id="promoPopup" class=
+    "d-none p-3 rounded rounded-3 bg-warning-subtle text-dark">
+      <div class="d-flex justify-content-start">
+        <div><img src="/static/img/summer.png" width="40" height=
+        "40" alt="Summer special"></div>
+        <div class="ms-3">
+          <h4>Summer Special</h4>
+          <p class="mb-1">Get 30% off on all plans!<br>
+          Use code:
+          <strong>SUMMER</strong></p><strong>Terms</strong>
+          <ul class="small">
+            <li>Only for new customers</li>
+            <li>Payment method: Stripe, Razorpay</li>
+          </ul>
+          <div class="d-flex justify-content-start">
+            <a onclick=
+            "if (!window.__cfRLUnblockHandlers) return false; hidePopup()"
+            target="_blank" href=
+            "https://app.dayschedule.com/billings/upgrade" rel=
+            "nofollow" class="btn btn-primary me-3"
+            data-cf-modified-a13bcb06a3880ee127456f63-=
+            ""><span>Upgrade now</span></a><a onclick=
+            "if (!window.__cfRLUnblockHandlers) return false; hidePopup()"
+            class="btn btn-link"
+            data-cf-modified-a13bcb06a3880ee127456f63-=""><span>Not
+            now</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-bottom d-md-none" tabindex="-1"
+    id="promoSheet" aria-labelledby="promoSheetLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+        Dayschedule App</h5>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <h6>Experience the ease of managing your appointments
+          right from your phone.</h6>
+          <div class="mt-4">
+            <a id="appLink" href="https://idm.in/dsapp" class=
+            "btn btn-outline-primary px-4 m-2" target="_blank" rel=
+            "nofollow noindex">Download app</a>
+          </div>
+          <p class="small">New version available</p>
+        </div>
+      </div>
+    </div>
+    <script src="/static/lib/main.js" type=
+    "a13bcb06a3880ee127456f63-text/javascript"></script>
+    <script type="a13bcb06a3880ee127456f63-module" src=
+    "/static/scripts/upi-qr-generator.js"></script>
+    <script type="a13bcb06a3880ee127456f63-text/javascript" src=
+    "/static/lib/qr-code.js"></script>
+    <script type="a13bcb06a3880ee127456f63-text/javascript" src=
+    "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </div>
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=G-E88RERET10" type=
+  "a13bcb06a3880ee127456f63-text/javascript"></script> 
+  <script type="a13bcb06a3880ee127456f63-text/javascript">
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-E88RERET10');
+  </script> 
+  <script type="a13bcb06a3880ee127456f63-text/javascript">
+
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1433473563702380');
+      fbq('track', 'PageView');
+  </script> <noscript><img height="1" width="1" src=
+  "https://www.facebook.com/tr?id=1433473563702380&amp;ev=PageView%20&amp;noscript=1">
+  </noscript> 
+  <script type="a13bcb06a3880ee127456f63-text/javascript">
+
+      if (window.location.href.includes('lp/')) {
+        fbq('track', 'ViewContent');
+
+        !(function (e, t, n, s, u, a) {
+          e.twq ||
+            ((s = e.twq =
+              function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+              }),
+            (s.version = '1.1'),
+            (s.queue = []),
+            (u = t.createElement(n)),
+            (u.async = !0),
+            (u.src = 'https://static.ads-twitter.com/uwt.js'),
+            (a = t.getElementsByTagName(n)[0]),
+            a.parentNode.insertBefore(u, a));
+        })(window, document, 'script');
+        twq('config', 'ou4rn');
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DaySchedule: Appointment scheduling for 1:1, round-robin and group meetings",
+        "operatingSystem": "Web, Android, iOS",
+        "applicationCategory": [
+          "Productivity",
+          "WebApplication",
+          "BrowserApplication",
+          "BusinessApplication"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "21"
+        },
+        "offers": {
+          "@type": "Offer",
+          "category": "free",
+          "price": 0,
+          "priceCurrency": "USD"
+        }
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "http://schema.org",
+        "@type": "ProfessionalService",
+        "image": "https://cdn.dayschedule.com/img/dayschedule-banner.png",
+        "priceRange": "Free, $8 per month for Pro",
+        "telephone": "+91 01276-298505",
+        "additionalType": [
+          "https://dayschedule.com/pricing",
+          "https://dayschedule.com/widget",
+          "https://dayschedule.com/solutions",
+          "https://dayschedule.com/enterprise",
+          "https://dayschedule.com/about",
+          "https://dayschedule.com/docs",
+          "https://dayschedule.com/docs/change-log"
+        ],
+        "sameAs": [
+          "https://twitter.com/dayschedule",
+          "https://www.facebook.com/DaySchedule",
+          "https://www.linkedin.com/company/dayschedule",
+          "https://www.linkedin.com/products/dayschedule",
+          "https://angel.co/dayschedule",
+          "https://play.google.com/store/apps/details?id=com.dayschedule",
+          "https://goo.gl/maps/UjovKqXT8tSx7wug6",
+          "https://apps.apple.com/us/app/dayschedule-appointment-app/id6444792037"
+        ],
+        "name": "DaySchedule",
+        "logo": "https://cdn.dayschedule.com/img/dayschedule.png",
+        "description": "DaySchedule is an online appointment scheduling software to improve team efficiency, reduce no-shows, and organize all team meetings single calendar scheduling software.",
+        "openingHours": "Customer support 24/7 via chat, phone and email.",
+        "geo": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.49",
+            "longitude": "77.08"
+          },
+          "geoRadius": "5000"
+        },
+        "url": "https://dayschedule.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 01276-298505",
+          "contactType": "customer service",
+          "email": "support@dayschedule.com",
+          "contactOption": "HearingImpairedSupported",
+          "availableLanguage": [
+            "Arabic",
+            "Bengali",
+            "Czech",
+            "Dutch",
+            "English",
+            "French",
+            "German",
+            "Hindi/Urdu",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay/Indonesian",
+            "Malayalam",
+            "Mandarin",
+            "Persian",
+            "Polish",
+            "Portuguese",
+            "Punjabi",
+            "Romanian",
+            "Russian",
+            "Spanish",
+            "Turkish",
+            "Ukrainian",
+            "Vietnamese",
+            "Estonian"
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "India",
+          "addressLocality": "Delhi NCR",
+          "addressRegion": "Bahadurgarh, Gurugram",
+          "postalCode": "124507",
+          "streetAddress": "47-FF, Omaxe Galleria, Sector 14"
+        }
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "DaySchedule",
+        "description": "Online Appointment Scheduling Software",
+        "logo": "https://cdn.dayschedule.com/img/dayschedule-logo.png",
+        "url": "https://dayschedule.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.dayschedule.com/docs/search?query={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "DaySchedule",
+        "alternateName": "Day Schedule",
+        "logo": "https://cdn.dayschedule.com/img/dayschedule-logo.png",
+        "url": "https://dayschedule.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.dayschedule.com/docs/search?query={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "http://schema.org",
+        "@type": "Service",
+        "name": "Online Appointment Scheduling Software",
+        "serviceType": "Software as a Service Online Appointment Scheduling",
+        "award": "5/5 Start Rating From Capterra",
+        "category": "Online Appointment Booking",
+        "providerMobility": "dynamic",
+        "alternateName": "Online Appointment Scheduling Software",
+        "image": "https://cdn.dayschedule.com/img/dayschedule-banner.png",
+        "mainEntityOfPage": "https://dayschedule.com/",
+        "url": "https://app.dayschedule.com/"
+      }
+  </script> 
+  <script type="application/ld+json">
+
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Appointment scheduling software",
+        "description": "DaySchedule is an online appointment scheduling software to improve team efficiency, reduce no-shows, and organize all team meetings on single calendar scheduling software.",
+        "thumbnailUrl": [
+          "https://cdn.dayschedule.com/img/dayschedule-appointment-scheduler.png"
+        ],
+        "uploadDate": "2024-10-28T08:00:00+08:00",
+        "duration": "PT1M",
+        "contentUrl": "https://cdn.dayschedule.com/video/appointment-scheduling-software.mp4",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": { "@type": "WatchAction" },
+          "userInteractionCount": 167018
+        },
+        "isFamilyFriendly": "true",
+        "inLanguage": "en-US"
+      }
+  </script> 
+  <script type="a13bcb06a3880ee127456f63-text/javascript">
+
+      if (!/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        const script = document.createElement('script');
+        script.src = 'https://accounts.google.com/gsi/client';
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+      }
+  </script> 
+  <script type="a13bcb06a3880ee127456f63-text/javascript">
+
+    if (window.innerWidth > 768) {
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "83522926-6c88-4b6c-926c-69c966124a65";
+        (function () {
+          d = document;
+          s = d.createElement("script");
+          s.src = "https://client.crisp.chat/l.js";
+          s.async = 1;
+          s.defer = 1;
+          d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+        }
+  </script>
+  <div id="g_id_onload" data-client_id=
+  "35818022409-0jo7gprpfmom0fpcrn1o7jhdrqglh7hl.apps.googleusercontent.com"
+  data-context="signup" data-login_uri=
+  "https://api.dayschedule.com/v1/oauth/google" data-itp_support=
+  "true" data-skip_prompt_cookie="auth_user"></div>
+  <script src=
+  "/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+  data-cf-settings="a13bcb06a3880ee127456f63-|49" defer></script>
+</body>
+</html>
